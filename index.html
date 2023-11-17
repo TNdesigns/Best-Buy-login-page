@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Buy Sign in page (custom)</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main-bx">
+        <form class="form-bx" action="#">
+            <img src="images/bestbuy_logo.png" alt="bestbuy" class="img1">
+            <h1>Sign In to Best Buy</h1>
+            <input type="text" placeholder="Email Address" id="email">
+            <p id="etxt1">Please check your email</p>
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="circle"></span>
+            </label>
+            <p class="p1">Show password</p>
+            <input type="password" placeholder="password" id="pwd">
+            <p id="fpw">Forgot your password?</p>
+            <p id="etxt2">Password must be at least 8 characters</p>
+            <button id="btn1" type="submit">Sign in</button>
+            <div class="or-line">
+                <hr class="hr1">
+                <p class="p2">or</p>
+                <hr class="hr2">
+            </div>
+            <div class="federated-login">
+                <button id="apl-btn"><img src="images/apple_logo.png" class="img2" alt="apple_logo"><p>Sign in with Apple</p></button>
+                <button id="ggl-btn"><img src="images/google_logo.png" class="img3" alt="google_logo"><p>Sign in with Google</p></button>
+                <p>By continuing you agree to our <span>Terms and Conditions</span>, our <span>Privacy 
+                    Policy</span>, and the <span>My Best Buy Program Terms</span>.
+                </p>
+            </div>
+            <hr class="hr3">
+            <p class="p3">Dont have an account? <span class="span1">Create an account</span></p>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

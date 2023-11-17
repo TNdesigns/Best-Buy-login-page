@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    overflow-x: hidden;
+    background-color: rgb(17, 46, 104);
+}
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.main-bx{
+    height: 650px;
+    width: 340px;
+    background-color: yellow;
+    border-radius: 25px;
+}
+.form-bx{
+    height: 630px;
+    width: 320px;
+    background-color: white;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.form-bx > h1{
+    font-family: "prompt";
+    font-size: 27px;
+    text-align: center;
+}
+#email{
+    height: 30px;
+    width: 270px;
+    border-color: black;
+    border-radius: 7px;
+    position: relative;
+    top: 10px;
+    left: 22px;
+}
+.switch{
+    width: 39px;
+    height: 20px;
+    background-color: darkgray;
+    border-radius: 50px;
+    position: relative;
+    left: 125px;
+    top: 15px;
+    display: inline-block;
+}
+#toggle{
+    display:none;
+}
+/*the slider/circle*/
+.circle{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+.circle:hover{
+    cursor: pointer;
+}
+/*the slider/circle*/
+.circle:before{
+    position: absolute;
+    content: "";
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+/*function to make the circle slide to left & right*/
+input:checked + .circle:before{
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+}
+.p1{
+    position: relative;
+    top: -7px;
+    left: 170px;
+    font-family: "Prompt";
+    font-size: 15px;
+}
+#pwd{
+    height: 30px;
+    width: 270px;
+    border-color: black;
+    border-radius: 7px;
+    position: relative;
+    top: 0px;
+    left: 22px;  
+}
+#fpw{
+    font-family: "Prompt";
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+    left: 26px;
+    color: blue;
+}
+#fpw:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#pwd::placeholder{
+    position: relative;
+    left: 20px;
+}
+#email::placeholder{
+    position: relative;
+    left: 20px;
+}
+#btn1{
+    height: 30px;
+    width: 270px;
+    background-color: rgb(17, 46, 104);
+    position: relative;
+    top: 10px;
+    left: 25px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-family: "Prompt";
+    cursor: pointer;
+}
+.hr1, .hr2{
+    width: 115px;
+    height: 1px;
+    background-color: black;
+    border: none;
+    
+}
+.p2{
+    position: relative;
+    top: -12px;
+    font-family: "Prompt";
+}
+.or-line{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 29px;
+    left: 27px;
+    gap: 10px;
+}
+.federated-login{
+    display: flex;
+    flex-direction: column;
+}
+#apl-btn{
+    height: 30px;
+    width: 270px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    border-radius: 7px;
+    background-color: white;
+    border-color: black;
+    cursor: pointer;
+}
+#ggl-btn{
+    height: 30px;
+    width: 270px;
+    position: relative;
+    top: 35px;
+    left: 25px;
+    border-radius: 7px;
+    background-color: white;
+    border-color: black;
+    cursor: pointer;
+}
+.img2{
+    height: 17px;
+    width: 20px;
+    position: relative;
+    left: -5.2vw;
+    top: 0.3vw;
+}
+.img3{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: -5.3vw;
+    top: 0.2vw;
+}
+#apl-btn > p{
+    position: relative;
+    top: -16px;
+    left: 8px;
+    font-family: "Prompt";
+}
+#ggl-btn > p{
+    position: relative;
+    top: -19px;
+    left: 9px;
+    font-family: "Prompt";
+}
+.hr3{
+    position: relative;
+    top: 60px;
+}
+.federated-login > p{
+    font-family: "Prompt";
+    margin-right: 35px;
+    font-size: 10px;
+    position: relative;
+    top: 46px;
+    left: 25px;
+}
+.p3{
+    position: relative;
+    top: 70px;
+    left: 25px;
+    font-family: "Prompt";
+    font-size: 13px;
+}
+.federated-login > p > span{
+    color: blue;
+}
+.federated-login > p > span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.p3 > span{
+    color: blue;
+}
+.p3 > span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#etxt1{
+    position: absolute;
+    top: 300px;
+    left: 35px;
+    font-family: "Prompt";
+    font-size: 10px;
+    color: crimson;
+    margin-right: 220px;
+    line-height: 11px;
+    display: none;
+}
+#etxt2{
+    position: absolute;
+    top: 365px;
+    left: 168px;
+    font-family: "Prompt";
+    font-size: 9.4px;
+    color: crimson;
+    display: none;
+    line-height: 10px;
+    margin-right: 30px;
+}
