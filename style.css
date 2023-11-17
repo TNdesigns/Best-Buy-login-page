@@ -374,11 +374,11 @@ input:checked + .circle:before{
         overflow-x: hidden;
     }
     .main-bx{
-        height: 155vw;
+        height: 160vw;
         width: 85vw;
     }
     .form-bx{
-        height: 150vw;
+        height: 155vw;
         width: 79vw;
     }
     #etxt1{
