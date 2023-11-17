@@ -266,3 +266,133 @@ input:checked + .circle:before{
     line-height: 10px;
     margin-right: 30px;
 }
+@media screen and (min-device-width:300px) and (max-device-width:399px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+    .content{
+        overflow-x: hidden;
+    }
+    .main-bx{
+        height: 150vw;
+        width: 85vw;
+    }
+    .form-bx{
+        height: 145vw;
+        width: 79vw;
+    }
+    h1{
+        position: relative;
+        top: 36vw;
+        left: 0vw;
+        font-family: "Prompt";
+        font-size: 25px;
+    }
+    #email,
+    #pwd,
+    #btn1,
+    #apl-btn,
+    #ggl-btn{
+        width: 65vw;
+    }
+    #email,#pwd,.switch,.p1,#fpw,#btn1,.or-line{
+        position: relative;
+        top: 38vw;
+    }
+    .img1{
+        position: absolute;
+        left: 4vw;
+    }
+    .federated-login{
+        position: relative;
+        top: 30vw;
+    }
+    .p1{
+        top: 32.5vw;
+        left: 39vw;
+    }
+    .switch{
+        top: 38.4vw;
+        left: 27vw;
+    }
+    #pwd{
+        top: 33vw;
+    }
+    #fpw{
+        top: 33vw;
+    }
+    #btn1{
+        top: 34vw;
+    }
+    .or-line{
+        width: 64vw;
+    }
+    .federated-login > p{
+        line-height: 3.1vw;
+        margin-right: 17vw;
+        left: 8vw;
+    }
+    .hr3{
+        top: 46vw;
+    }
+    .p3{
+        top: 50vw;
+        font-size: 11px;
+    }
+    .img2{
+        top: 1vw;
+        left: -17vw;
+    }
+    .img3{
+        top: 1vw;
+        left: -17.5vw;
+    }
+    #etxt1{
+        top: 58vw;
+        left: 8vw;
+        margin-right: 50vw;
+    }
+    #etxt2{
+        top: 73.2vw;
+        left: 45vw;
+        margin-right: 5vw;
+    }
+}
+@media screen and (min-device-width:400px) and (max-device-width:499px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    html,body{
+        overflow-x: hidden;
+    }
+    .content{
+        overflow-x: hidden;
+    }
+    .main-bx{
+        height: 160vw;
+        width: 85vw;
+    }
+    .form-bx{
+        height: 155vw;
+        width: 79vw;
+    }
+    #etxt1{
+        top: 73.5vw;
+    }
+    #etxt2{
+        top: 89.5vw;
+    }
+    .img2{
+        top: 1vw;
+        left: -16vw;
+    }
+    .img3{
+        top: 0.8vw;
+        left: -16.7vw;
+    }
+}
